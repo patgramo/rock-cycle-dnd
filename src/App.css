@@ -1,38 +1,72 @@
-.App {
+.app {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  background-color: black;
+  margin: 0px 0px 10px 0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#diagram {
+  text-align: center;
+  background-image: url("./images/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.title {
+  font-size: 3em;
   color: white;
+  margin: 0px;
 }
-
-.App-link {
-  color: #61dafb;
+.vocab-words-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drop-area {
+  width: 150px;
+  height: 50px;
+  position: absolute;
+  border: 1px dotted black;
+}
+.drop-area-1 {
+  top: 40%;
+  left: 12%;
+}
+.drop-area-2 {
+  top: 50%;
+  left: 27%;
+}
+.drop-area-3 {
+  bottom: 15%;
+  left: 28%;
+}
+.drop-area-4 {
+  top: 38%;
+  left: 39%;
+}
+.drop-area-5 {
+  top: 22%;
+  left: 46%;
+}
+.drop-area-6 {
+  top: 47%;
+  right: 45%;
+}
+.drop-area-7 {
+  bottom: 15%;
+  right: 31.2%;
+}
+.drop-area-8 {
+  top: 49%;
+  right: 29%;
+}
+.drop-area-9 {
+  top: 45%;
+  right: 12%;
 }

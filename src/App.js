@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import {DndProvider} from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
+import DragDrop from "./components/DragDrop";
+import Header from "./components/Header";
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <DndProvider backend={HTML5Backend}>
+        <div className="app">
+          <DragDrop />
+        </div>
+      </DndProvider>
     </div>
   );
 }
